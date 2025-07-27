@@ -1,47 +1,46 @@
-/* Fundo e texto */
-body {
+/* Reset básico */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #212529;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Navbar */
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  background-color: #007bff;
-  padding: 10px;
-  margin: 0;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 15px;
-}
-nav a:hover, nav a.ativo {
-  background-color: #0056b3;
-  border-radius: 4px;
+/* Body ocupa toda a altura, fonte, etc */
+html, body {
+  height: 100%;
+  font-family: Sans-Serif;
+  background: #f4f4f4;
 }
 
-/* Conteúdo principal */
+/* Conteúdo principal com padding na base para não ficar coberto pelo footer */
 main {
+  padding: 5px;
+  padding-bottom: 40px;
+  /* altura do footer + espaço */
   max-width: 600px;
-  margin: 20px auto;
-  padding: 10px;
+  margin: 20px auto 0;
 }
 
-/* Footer fixo */
+/* Footer fixo no rodapé */
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   height: 40px;
+  /* altura fixa */
   background: #222;
   color: #fff;
   text-align: center;
   line-height: 40px;
+  /* centraliza texto verticalmente */
+  z-index: 1000;
+}
+
+h1 {
+  background: #007bff;
+  color: white;
+  text-align: center;
 }
 
 /* Botão */
